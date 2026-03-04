@@ -16,9 +16,9 @@ async function startServer() {
     await connectToRedis();
     await connectDB();
 
-    const port = PORT || 3000;
+    const port = Number(PORT) || 3000;
 
-    server = app.listen(port, () => {
+    server = app.listen(port, '0.0.0.0', () => {
       console.log(`✅ Server running on port ${port}`);
       console.log(`🔗 Backend URL: http://localhost:${port}`);
     });
