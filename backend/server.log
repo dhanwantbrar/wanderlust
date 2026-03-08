@@ -1,0 +1,15 @@
+nohup: ignoring input
+
+> start
+> npm run build && node dist/server.js
+
+
+> build
+> tsc
+
+🚀 Starting server...
+📡 Connecting to databases...
+Redis Connected: redis://127.0.0.1:6379
+Database connected: mongodb://127.0.0.1/wanderlust
+✅ Server running on port 8080
+🔗 Backend URL: http://localhost:8080
