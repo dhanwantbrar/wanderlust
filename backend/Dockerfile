@@ -8,6 +8,9 @@ WORKDIR /app
 COPY . .
 
 RUN npm i
+# run tests
+
+RUN npm run test
 
 # stage 2
 FROM node:20-slim
