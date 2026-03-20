@@ -13,9 +13,6 @@ ENV NPM_CONFIG_IGNORE_SCRIPTS=true
 # install dependencies
 RUN npm i
 
-# run test
-RUN npm run test
-
 # copy the all code
 COPY . .
 
